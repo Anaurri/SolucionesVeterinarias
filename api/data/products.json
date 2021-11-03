@@ -1,0 +1,84 @@
+[
+    {
+        "code": "P84550",
+        "name": "ALFOMBRA TERMICA 100X75 CM.",
+        "shortDescription": "Alfombra térmica de 100 x 75 cm." ,
+        "largeDescription": "Alfombra térmica de 100 x 75 cm. Disponible en gris y beige. El sitio ideal para que tu mascota se relaje. Lavable a 60º C",
+        "key": [
+            "010705",
+            "020705"
+        ],
+        "price" : 9.6,
+        "IVA": 18,
+        "Recipe": false,
+        "picture":  "https://www.google.com/search?q=alfombrilla+perro&sxsrf=AOaemvKKVta-hHJbsWVhM3eDBtgfMYzTBg:1635967729508&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiQ-4Xb9vzzAhWj3OAKHXCICsMQ_AUoAXoECAEQAw&biw=1294&bih=669&dpr=1#imgrc=DqCwZeSqsGXrCM"
+        
+    },
+    {
+        "code": "P84002",
+        "name": "ALFOMBRA TERMICA 125 x 80  CM.",
+        "shortDescription": "Alfombra térmica de 125 x 80 cm. ",
+        "largeDescription": "Alfombra térmica de 125 x 80 cm. Fabricada en material aislante con suelo de latex antideslizante, idónea para suelos fríos. Lavable a 30ºC.",
+        "key": [
+            "010705"
+        ],
+        "price" : 23.82,
+        "IVA": 18,
+        "Recipe": false,
+        "picture":  "https://www.google.com/search?q=alfombrilla+perro&sxsrf=AOaemvKKVta-hHJbsWVhM3eDBtgfMYzTBg:1635967729508&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiQ-4Xb9vzzAhWj3OAKHXCICsMQ_AUoAXoECAEQAw&biw=1294&bih=669&dpr=1#imgrc=DqCwZeSqsGXrCM"
+        
+    },    {
+        "code": "CLAVUBAY50",
+        "name": "Clavubay 50 mg.",
+        "shortDescription": "Antibacteriano en comprimido oral",
+        "largeDescription": "Antibacteriano en comprimido oral, para el tratatamiento de infecciones de la piel, tracto urinario, respiratorias y enteritis en perros.",
+        "key": [
+            "120302"
+        ],
+        "price" : 5.3,
+        "IVA": 8,
+        "Recipe": true,
+        "picture":  "https://www.google.com/search?q=medicamente+imagen&tbm=isch&ved=2ahUKEwiv7PHb9vzzAhUGKhoKHduxDbEQ2-cCegQIABAA&oq=medicamente+imagen&gs_lcp=CgNpbWcQAzoHCCMQ7wMQJzoGCAAQCBAeOgYIABAKEBg6BAgAEBg6CAgAEIAEELEDOgUIABCABDoICAAQsQMQgwE6BAgAEEM6BwgAELEDEEM6CwgAEIAEELEDEIMBOgQIABAeOgQIABATOgYIABAeEBM6CAgAEAgQHhATUO8JWIEjYLYkaAFwAHgAgAG6AYgB4xCSAQQxMS45mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=8-KCYe-mEIbUaNvjtogL&bih=669&biw=1294#imgrc=L95DhGXvhmuO3M"
+        
+    },  {
+        "code": "CLAVUBA250",
+        "name": "Clavubay 250 mg.",
+        "shortDescription": "Antibacteriano en comprimido oral",
+        "largeDescription": "Antibacteriano en comprimido oral, para el tratatamiento de infecciones de la piel, tracto urinario, respiratorias y enteritis en perros.",
+        "key": [
+            "120302"
+        ],
+        "price" : 10.3,
+        "IVA": 8,
+        "Recipe": true,
+        "picture":  "https://www.google.com/search?q=medicamente+imagen&tbm=isch&ved=2ahUKEwiv7PHb9vzzAhUGKhoKHduxDbEQ2-cCegQIABAA&oq=medicamente+imagen&gs_lcp=CgNpbWcQAzoHCCMQ7wMQJzoGCAAQCBAeOgYIABAKEBg6BAgAEBg6CAgAEIAEELEDOgUIABCABDoICAAQsQMQgwE6BAgAEEM6BwgAELEDEEM6CwgAEIAEELEDEIMBOgQIABAeOgQIABATOgYIABAeEBM6CAgAEAgQHhATUO8JWIEjYLYkaAFwAHgAgAG6AYgB4xCSAQQxMS45mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=8-KCYe-mEIbUaNvjtogL&bih=669&biw=1294#imgrc=32dZXvKzuiTPrM"
+        
+    }, {
+        "code": "DROPLU2COM",
+        "name": "DRONTAL PLUS 2 COMP.",
+        "shortDescription": "Drontal plus 2 comprimidos.",
+        "largeDescription": "Antiparasitario interno frente a teniasis y nematodosis para perros. Estuche con 2 comprimidos.",
+        "key": [
+            "120302"
+        ],
+        "price" : 5.3,
+        "IVA": 8,
+        "Recipe": true,
+        "picture":  "https://www.google.com/search?q=imagen+medicamente+perro&tbm=isch&chips=q:imagen+medicamente+perro,online_chips:antiinflamatorios:1wVuRhG4sLk%3D&hl=es&sa=X&ved=2ahUKEwj7lbaw7OLzAhXR3YUKHVQsBbUQ4lYoAXoECAEQFA&biw=1279&bih=669#imgrc=3vSAbFwxB6sEAM"
+        
+    }, {
+        "code": "123",
+        "name": "ALFOMBRA TERMICA 100X75 CM.",
+        "shortDescription": "Afombra térmica",
+        "largeDescription": "Alfombra térmica de 100 x 75 cm. Disponible en gris y beige. El sitio ideal para que tu mascota se relaje. Lavable a 60º C",
+        "key": [
+            "010705",
+            "020705"
+        ],
+        "price" : 9.6,
+        "IVA": 8,
+        "Recipe": false,
+        "picture":  "https://www.google.com/search?q=medicamente+imagen&tbm=isch&ved=2ahUKEwiv7PHb9vzzAhUGKhoKHduxDbEQ2-cCegQIABAA&oq=medicamente+imagen&gs_lcp=CgNpbWcQAzoHCCMQ7wMQJzoGCAAQCBAeOgYIABAKEBg6BAgAEBg6CAgAEIAEELEDOgUIABCABDoICAAQsQMQgwE6BAgAEEM6BwgAELEDEEM6CwgAEIAEELEDEIMBOgQIABAeOgQIABATOgYIABAeEBM6CAgAEAgQHhATUO8JWIEjYLYkaAFwAHgAgAG6AYgB4xCSAQQxMS45mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=8-KCYe-mEIbUaNvjtogL&bih=669&biw=1294#imgrc=Xulp8NSCHOj-cM"
+        
+    }   
+]
