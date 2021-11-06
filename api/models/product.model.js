@@ -18,7 +18,7 @@ const productSchema = new Schema({
     },
     /*La clave se compone de tres pares de dígitos. xxyyzz  donde xx es la key de nivel 1, yy nivel 2, zz nivel 3*/
     key: {
-        type: String
+        type: [String]
     },
     price: {
         type: Number

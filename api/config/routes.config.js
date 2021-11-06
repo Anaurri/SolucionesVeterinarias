@@ -1,12 +1,12 @@
 const express = require ('express');
 const createError = require('http-errors');
-
-const router = express.Router;
-
+const router = express.Router();
 const ProductsController = require ('../controllers/products.controller');
 
 
-router.get('/productos', ProductsController.list); 
+router.get('/products', ProductsController.list); /*Postman ok*/
+router.get('/product/:id', ProductsController.detail); 
+
 
 
 /*Handel errors*/
