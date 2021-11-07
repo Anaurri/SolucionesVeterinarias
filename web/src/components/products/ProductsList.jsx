@@ -1,0 +1,59 @@
+import { useState, useEffect } from 'react';
+import productsService from '../../services/products-service';
+import { Fragment } from 'react';
+import ProductItem from '../products/ProductItem';
+
+function ProductsList(){
+
+    const [state, setState] = useState({
+        products: []
+      });
+      useEffect(() => {
+        // componentDidMount
+    
+        async function fetchProducts() {
+          console.log('Fetching products...');
+          setState(state => ({
+            ...state,
+          }))
+          let products = await productsService.list();
+          console.log (products)
+          if (!isUnmounted) {
+            setState({
+              products: products,
+            })
+          }
+        }
+        let isUnmounted = false;
+        fetchProducts();    
+
+        return () => {
+          // componentWillUnmount
+          isUnmounted = true;
+        }
+      });
+      const { products } = state;
+
+
+
+    return (
+    <Fragment >
+
+    <div>"Products List"</div>
+
+    <div className="row row-cols-1">
+              {products.map(product => (
+                  <div key={product.id} className="col mb-4" >
+                  <ProductItem product={product}></ProductItem></div>
+            // <div key={product.id} className="col mb-4"><ProductItem product={product}></ProductItem></div>
+              ))}
+    </div>
+    </Fragment>
+
+  )
+}
+
+export default ProductsList;
+
+
+

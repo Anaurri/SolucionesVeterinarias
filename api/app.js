@@ -2,14 +2,18 @@ const express = require('express');
 const mongoose = require('mongoose');
 const createError = require('http-errors');
 require('./config/db.config');
-const router = require('./config/routes.config')
+const router = require('./config/routes.config');
+const cors = require('./config/cors.config');
+
 const app = express();
 
 
 
 /** Configure routes */
-
+app.use(express.json());
+app.use(cors);
 app.use('/api', router);
+
 
   
 const port = Number(process.env.PORT || 3001);

@@ -5,7 +5,7 @@ const ProductsController = require ('../controllers/products.controller');
 
 
 router.get('/products', ProductsController.list); /*Postman ok*/
-router.get('/product/:id', ProductsController.detail); 
+router.get('/products/:id', ProductsController.detail); 
 
 
 
