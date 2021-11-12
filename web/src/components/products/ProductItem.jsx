@@ -6,12 +6,12 @@ function ProductItem ({product}){
     return(
         <Fragment >
             
-        <div className="container" style={{ marginTop:"50px"}}>
+        <div className="container bg-warning pt-2">
         <div className="row">
-            <div className="col-md-3">
-                <div className="card-sl">
-                    <div className="card-image">
-                        <img
+            <div>
+                <div className="card-sl "style={{ fontSize: '12' }}>
+                    <div className="card-image" style={{  alignItems: "center"}}>
+                        <img style={{ width: '100%'}}
                             src={product.picture} />
                     </div>
                     <a className="card-action" href="#"><i className="fa fa-heart"></i></a>

@@ -1,18 +1,23 @@
 import { Fragment, useContext } from "react";
-import { useTranslation } from 'react-i18next';
-import ProductsList from '../components/products/ProductsList';  
-import AuthContext from '../contexts/AuthStore';  
+import ProductsList from '../components/products/ProductsList';
 
 function Products() {
-  const { t } = useTranslation()
-
   return (
     <Fragment>
+      <div className="container pt-4 pb-5 bg-transparent border-warning  rounded" >
+        <div className="row row-cols-2">
+          <div className="container pt-4 pb-5 bg-transparent overflow auto" style={{ width: "20%" }}>
 
+            <ProductsList ProfileView="false" />
 
-         <ProductsList ProfileView="false" />
+          </div>
+          <div className="container pt-4 pb-5 bg-transparent overflow auto" style={{ width: "70%" }}>
+            <ProductsList ProfileView="false" />
+          </div>
 
-    </Fragment>
+        </div>
+      </div>
+    </Fragment >
   );
 }
 

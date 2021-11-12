@@ -31,19 +31,16 @@ function ProductsList(){
           // componentWillUnmount
           isUnmounted = true;
         }
-      });
+      },[]); /*debemos poner el array de dependencias aunque vaya a vacío para que solo se cargue una vez*/
       const { products } = state;
 
 
 
     return (
     <Fragment >
-
-    <div>"Products List"</div>
-
-    <div className="row row-cols-1">
+    <div className="row row-cols-5">
               {products.map(product => (
-                  <div key={product.id} className="col mb-4" >
+                  <div key={product.id} className="col mb-4 bg-white border-warning" >
                   <ProductItem product={product}></ProductItem></div>
             // <div key={product.id} className="col mb-4"><ProductItem product={product}></ProductItem></div>
               ))}

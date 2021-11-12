@@ -1,30 +1,24 @@
-import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes, Redirect } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
-import Products from './components/products/ProductsList';
+import Products from './screens/Products';
 import Error from './screens/Error';
 
-
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Products></Products>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar></Navbar>
+      <div className='bg' style={{ backgroundColor: "#171721" }}>
+        <div className="container mt-5 pt-5 pb-5">
+          <Routes>
+            <Route exact path="/products" element={<Products/>} />
+            <Route exact path="/404" element={() => <Error code={404} />} />
+            <Route exact path="/403" element={() => <Error code={403} />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
