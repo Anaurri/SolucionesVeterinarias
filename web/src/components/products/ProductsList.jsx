@@ -38,13 +38,13 @@ function ProductsList(){
 
     return (
     <Fragment >
-    <div className="row row-cols-5">
+    <div className="row row-cols-3">
               {products.map(product => (
-                  <div key={product.id} className="col mb-4 bg-white border-warning" >
+                   <div className="card col bg-white border-warning" key={product.id}>
                   <ProductItem product={product}></ProductItem></div>
             // <div key={product.id} className="col mb-4"><ProductItem product={product}></ProductItem></div>
               ))}
-    </div>
+               </div>
     </Fragment>
 
   )

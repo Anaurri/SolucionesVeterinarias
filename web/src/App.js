@@ -9,8 +9,8 @@ function App() {
   return (
     <Router>
       <Navbar></Navbar>
-      <div className='bg' style={{ backgroundColor: "#171721" }}>
-        <div className="container mt-5 pt-5 pb-5">
+      <div>
+        <div className="container pt-5 pb-5">
           <Routes>
             <Route exact path="/products" element={<Products/>} />
             <Route exact path="/404" element={() => <Error code={404} />} />
