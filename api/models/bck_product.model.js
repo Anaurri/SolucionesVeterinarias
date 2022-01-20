@@ -17,13 +17,7 @@ const productSchema = new Schema({
         type: String
     },
     /*La clave se compone de tres pares de dígitos. xxyyzz  donde xx es la key de nivel 1, yy nivel 2, zz nivel 3*/
-    cat: {
-        type: [String]
-    },
-    subcat: {
-        type: [String]
-    },
-    subcat2: {
+    key: {
         type: [String]
     },
     price: {
@@ -38,28 +32,20 @@ const productSchema = new Schema({
     },
     picture: {
         type: String,
+        required: 'Image is required',
         default: `https://www.google.com/search?q=no+imagen&sxsrf=AOaemvIlcLYbklyvhHqFicVNbxV_XnQEcg:1635968520263&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiC5I3U-fzzAhVjB2MBHaE0DMMQ_AUoAXoECAEQAw&biw=1294&bih=669&dpr=1#imgrc=2uz6qdgoYKOZzM`,
-        // validate: {
-        //     validator: function (value) {
-        //         try {
-        //             const url = new URL(value);
-        //             return url.protocol === 'http:' || url.protocol === 'https:'
-        //         } catch (error) {
-        //             return false;
-        //         }
-        //     },
-        //     message: props => `Invalid image URL`
-        // }
-    },
-    pictureCode: {
-        type: [String]
-    },
-    usage: {
-        type: [String]
-    },
-    dueDate: {
-        type: [String]
-    },
+        validate: {
+            validator: function (value) {
+                try {
+                    const url = new URL(value);
+                    return url.protocol === 'http:' || url.protocol === 'https:'
+                } catch (error) {
+                    return false;
+                }
+            },
+            message: props => `Invalid image URL`
+        }
+    }
 })
 
 

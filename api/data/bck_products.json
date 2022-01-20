@@ -1,0 +1,84 @@
+[
+    {
+        "code": "P84550",
+        "name": "ALFOMBRA TERMICA 100X75 CM.",
+        "shortDescription": "Alfombra térmica de 100 x 75 cm." ,
+        "largeDescription": "Alfombra térmica de 100 x 75 cm. Disponible en gris y beige. El sitio ideal para que tu mascota se relaje. Lavable a 60º C",
+        "key": [
+            "010705",
+            "020705"
+        ],
+        "price" : 9.6,
+        "IVA": 18,
+        "Recipe": false,
+        "picture":  "https://cdn.redcanina.es/wp-content/uploads/2020/05/04104800/naxpet-1024x683.jpg"
+        
+    },
+    {
+        "code": "P84002",
+        "name": "ALFOMBRA TERMICA 125 x 80  CM.",
+        "shortDescription": "Alfombra térmica de 125 x 80 cm. ",
+        "largeDescription": "Alfombra térmica de 125 x 80 cm. Fabricada en material aislante con suelo de latex antideslizante, idónea para suelos fríos. Lavable a 30ºC.",
+        "key": [
+            "010705"
+        ],
+        "price" : 23.82,
+        "IVA": 18,
+        "Recipe": false,
+        "picture":  "https://cdn.redcanina.es/wp-content/uploads/2020/05/04104800/naxpet-1024x683.jpg"
+        
+    },    {
+        "code": "CLAVUBAY50",
+        "name": "Clavubay 50 mg.",
+        "shortDescription": "Antibacteriano en comprimido oral",
+        "largeDescription": "Antibacteriano en comprimido oral, para el tratatamiento de infecciones de la piel, tracto urinario, respiratorias y enteritis en perros.",
+        "key": [
+            "120302"
+        ],
+        "price" : 5.3,
+        "IVA": 8,
+        "Recipe": true,
+        "picture":  "https://cdn.redcanina.es/wp-content/uploads/2020/05/04104800/naxpet-1024x683.jpg"
+        
+    },  {
+        "code": "CLAVUBA250",
+        "name": "Clavubay 250 mg.",
+        "shortDescription": "Antibacteriano en comprimido oral",
+        "largeDescription": "Antibacteriano en comprimido oral, para el tratatamiento de infecciones de la piel, tracto urinario, respiratorias y enteritis en perros.",
+        "key": [
+            "120302"
+        ],
+        "price" : 10.3,
+        "IVA": 8,
+        "Recipe": true,
+        "picture":  "https://cdn.redcanina.es/wp-content/uploads/2020/05/04104800/naxpet-1024x683.jpg"
+        
+    }, {
+        "code": "DROPLU2COM",
+        "name": "DRONTAL PLUS 2 COMP.",
+        "shortDescription": "Drontal plus 2 comprimidos.",
+        "largeDescription": "Antiparasitario interno frente a teniasis y nematodosis para perros. Estuche con 2 comprimidos.",
+        "key": [
+            "120302"
+        ],
+        "price" : 5.3,
+        "IVA": 8,
+        "Recipe": true,
+        "picture":  "https://cdn.redcanina.es/wp-content/uploads/2020/05/04105732/predni-zoo-1024x683.jpg"
+        
+    }, {
+        "code": "123",
+        "name": "ALFOMBRA TERMICA 100X75 CM.",
+        "shortDescription": "Afombra térmica",
+        "largeDescription": "Alfombra térmica de 100 x 75 cm. Disponible en gris y beige. El sitio ideal para que tu mascota se relaje. Lavable a 60º C",
+        "key": [
+            "010705",
+            "020705"
+        ],
+        "price" : 9.6,
+        "IVA": 8,
+        "Recipe": false,
+        "picture":  "https://cdn.redcanina.es/wp-content/uploads/2020/05/04104800/naxpet-1024x683.jpg"
+        
+    }   
+]
