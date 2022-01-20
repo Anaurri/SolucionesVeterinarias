@@ -10,9 +10,12 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <Navbar></Navbar>
       <div>
+      <Navbar></Navbar>
+
         <div className="container pt-5 pb-5">
+
+        {/* <div className="pt-5 pb-5"> */}
           <Routes>
             <Route exact path="/" element={<Products />} />
             <Route exact path="/404" element={() => <Error code={404} />} />

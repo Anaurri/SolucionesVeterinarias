@@ -1,44 +1,53 @@
 import { Fragment, useContext } from "react";
-import animal1 from '../../images/animal1.jpeg';
-import animal2 from '../../images/animal2.jpeg';
-import animal3 from '../../images/animal3.jpg';
+import animal1 from '../../images/huellas_kiko2.jpg';
+import animal2 from '../../images/tienda2.jpg';
+import animal3 from '../../images/fidel_vaca2.jpg';
+import animal4 from '../../images/lucky2.jpg';
+import animal5 from '../../images/perro.jpg';
+
 
 
 function Carrusel() {
     return (
         <Fragment>
-            <div className="carousel pt-5 pb-5 border-warning" >
-                <div className="carousel-inner">
-                    <input className="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked" />
-                    <div className="carousel-item">
-                        <img src={animal1}/>
+            <div className="container mt-5 pt-5 pb-5">
+                <div id="carouselExampleIndicators" className="carousel slide " data-bs-ride="carousel">
+                    <div className="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
-                    <input className="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" />
-                    <div className="carousel-item">
-                    <img src={animal2}/>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img src={animal1} className="d-block w-100 border-right-0 border-primary rounded" alt="..." />
+                        </div>
+                        <div className="carousel-item">
+                            <img src={animal2} className="d-block w-100 border-right-0 border-primary rounded" alt="..." />
+                        </div>
+                        <div className="carousel-item">
+                            <img src={animal3} className="d-block w-100 border-right-0 border-primary rounded" alt="..." />
+                        </div>
+                        <div className="carousel-item">
+                            <img src={animal4} className="d-block w-100 border-right-0 border-primary rounded" alt="..." />
+                        </div>
+                        <div className="carousel-item">
+                            <img src={animal5} className="d-block w-100 border-right-0 border-primary rounded" alt="..." />
+                        </div>
                     </div>
-                    <input className="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="" />
-                    <div className="carousel-item">
-                    <img src={animal3}/>
-                    </div>
-                    <label for="carousel-3" className="carousel-control prev control-1">‹</label>
-                    <label for="carousel-2" className="carousel-control next control-1">›</label>
-                    <label for="carousel-1" className="carousel-control prev control-2">‹</label>
-                    <label for="carousel-3" className="carousel-control next control-2">›</label>
-                    <label for="carousel-2" className="carousel-control prev control-3">‹</label>
-                    <label for="carousel-1" className="carousel-control next control-3">›</label>
-                    <ol className="carousel-indicators">
-                        <li>
-                            <label for="carousel-1" className="carousel-bullet">•</label>
-                        </li>
-                        <li>
-                            <label for="carousel-2" className="carousel-bullet">•</label>
-                        </li>
-                        <li>
-                            <label for="carousel-3" className="carousel-bullet">•</label>
-                        </li>
-                    </ol>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Next</span>
+                    </button>
                 </div>
+
+
+
             </div>
         </Fragment >
     );
