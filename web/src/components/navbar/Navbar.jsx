@@ -6,22 +6,19 @@ import logo from '../../images/caballo.png'
 function Navbar() {
 
   return (
-    <nav className="navbar fixed-top bg-white border">
+    // <nav className="navbar fixed-top bg-white border"> Al fijar la nav me sube el carrusel muy arriba
+    <Fragment>
       {/* <div className="container-fluid"> */}
-      <div className="container">
-        <div class="navbar-header">
-          <Link className="navbar-brand" to="/products">
-            <img src={logo} width="240"  alt="Logo"/>
-          </Link>
-          {/* <NavLink className="navbar-brand" activeClassName="active" to="/products">Productos</NavLink>
-          <NavLink className="navbar-brand" activeClassName="active" to="/register">Register</NavLink>
+      <nav className="navbar lead border" >
+        <div className="container">
+          <NavLink className="navbar-brand" to="/products">Productos</NavLink>
+          <NavLink className="navbar-brand" to="/register">Register</NavLink>
           <NavLink className="navbar-brand" to="/map"><i className="fa fa-globe" aria-hidden="true"></i></NavLink>
-          <NavLink className="navbar-brand" activeClassName="active" to="/login">Login</NavLink> */}
-          <NavLink className="navbar-brand" activeClassName="active" to="/">Sobre nosotros</NavLink>
+          <NavLink className="navbar-brand" to="/login">Login</NavLink>
+          <NavLink className="navbar-brand" to="/">Sobre nosotros</NavLink>
         </div>
-
-      </div>
     </nav>
+    </Fragment>
   );
 }
 

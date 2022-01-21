@@ -4,8 +4,7 @@ import { Fragment } from 'react';
 function AboutUs() {
     return (
         <Fragment>
-            <div class="container">
-                <div class="row">
+                    <div className="row">
                         <address>
                             <strong>Soluciones Veterinarias SL</strong><br />
                             Paseo Ezequiel González,<br />
@@ -18,7 +17,6 @@ function AboutUs() {
                             <a href="mailto:gesvet@orange.es">gesvet@orange.es</a>
                         </address>
                 </div>
-            </div>
         </Fragment>
 
     )

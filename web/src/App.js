@@ -1,5 +1,7 @@
 import { Route, BrowserRouter as Router, Routes, Redirect } from 'react-router-dom';
+import Solvet from './components/navbar/Solvet';
 import Navbar from './components/navbar/Navbar';
+
 import Products from './screens/Products';
 import Carrusel from './components/products/Carrusel';
 
@@ -10,19 +12,13 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div>
-      <Navbar></Navbar>
-
-        <div className="container pt-5 pb-5">
-
-        {/* <div className="pt-5 pb-5"> */}
-          <Routes>
-            <Route exact path="/" element={<Products />} />
-            <Route exact path="/404" element={() => <Error code={404} />} />
-            <Route exact path="/403" element={() => <Error code={403} />} />
-          </Routes>
-        </div>
-      </div>
+        <Navbar></Navbar>
+        <Solvet></Solvet>
+        <Routes>
+          <Route exact path="/" element={<Products />} />
+          <Route exact path="/404" element={() => <Error code={404} />} />
+          <Route exact path="/403" element={() => <Error code={403} />} />
+        </Routes>
     </Router>
   );
 }

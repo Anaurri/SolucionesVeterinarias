@@ -38,7 +38,8 @@ function ProductsList(){
 
     return (
     <Fragment >
-    <div className="row row-cols-3">
+    {/* <div className=" container overflow auto" style={{ height: "device-height" }}> */}
+    <div className="row row-cols-3" >
               {products.map(product => (
                    <div  className="card col bg-white" key={product.id}>
                   <ProductItem product={product}></ProductItem></div>

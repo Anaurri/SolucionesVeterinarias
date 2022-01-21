@@ -1,17 +1,16 @@
 import { Fragment, useContext } from "react";
-import animal1 from '../../images/huellas_kiko2.jpg';
-import animal2 from '../../images/tienda2.jpg';
-import animal3 from '../../images/fidel_vaca2.jpg';
-import animal4 from '../../images/lucky2.jpg';
-import animal5 from '../../images/perro.jpg';
+import animal1 from '../../images/huellas_kiko.jpg';
+import animal2 from '../../images/tienda1.png';
+import animal3 from '../../images/fidel_vaca.jpg';
+import animal4 from '../../images/lucky.jpg';
+import animal5 from '../../images/perro1.jpg';
 
 
 
 function Carrusel() {
     return (
-        <Fragment>
-            <div className="container mt-5 pt-5 pb-5">
-                <div id="carouselExampleIndicators" className="carousel slide " data-bs-ride="carousel">
+            <div className="container d-flex justify-content-center pb-3" >
+                <div id="carouselExampleIndicators" className="carousel slide" style={{width: "650px"}} data-bs-ride="carousel">
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -45,11 +44,7 @@ function Carrusel() {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
-
-
-
             </div>
-        </Fragment >
     );
 }
 
