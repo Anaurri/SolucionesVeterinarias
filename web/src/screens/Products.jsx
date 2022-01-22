@@ -21,7 +21,10 @@ function Products() {
             </div>
             <div className="container pt-4 pb-5 " style={{ width: "65%" }}>
               <h1>Catálogo de productos</h1>
+
               <ProductsList ProfileView="false" />
+              {/* </div> */}
+
             </div>
           </div>
 

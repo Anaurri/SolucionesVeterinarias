@@ -38,13 +38,15 @@ function ProductsList(){
 
     return (
     <Fragment >
-    {/* <div className=" container overflow auto" style={{ height: "device-height" }}> */}
-    <div className="row row-cols-3" >
+    <div className=" container "  >
+    <div className="row row-cols-3 border " style={{  height: "700px" ,overflowY: "scroll"}}>
               {products.map(product => (
-                   <div  className="card col bg-white" key={product.id}>
+                   <div  className="card col" key={product.id}>
                   <ProductItem product={product}></ProductItem></div>
               ))}
                </div>
+               </div>
+
     </Fragment>
 
   )
