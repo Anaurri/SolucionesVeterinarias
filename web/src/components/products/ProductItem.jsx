@@ -28,6 +28,8 @@ function ProductItem({ product }) {
                 <div class="card-body">
                     <div className="card-title">
                         {product.name}
+                        {product.code}
+
                     </div>
                 </div>     
                 <Link className="stretched-link link-unstyled" to={`/products/${product._id}`}></Link>

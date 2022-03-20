@@ -7,10 +7,12 @@ import ReactPaginate from 'react-paginate';
 
 function ProductsList() {
 
+  const productPerPage = 6;
+
   const [state, setState] = useState({
     products: [],
     currentProducts: [], /*Los productos por página*/
-    currentPage: 1,
+    currentPage: 0,
     itemOffset: 0,
     totalPages: 0
   });
@@ -19,13 +21,14 @@ function ProductsList() {
 
     async function fetchProducts() {
       console.log('Fetching products...');
-      let products = await productsService.list();
+      let allProducts = await productsService.list();
       if (!isUnmounted) {
         setState({
           ...state,
-          products: products,
-          currentProducts: products.slice(0, 6),
-          totalPages: Math.ceil(products.length / 6)
+          allProducts: allProducts,
+          products: allProducts,
+          currentProducts: allProducts.slice(0, productPerPage),
+          totalPages: Math.ceil(allProducts.length / productPerPage)
         })
       }
     }
@@ -39,14 +42,36 @@ function ProductsList() {
   }, []); /*debemos poner el array de dependencias aunque vaya a vacío para que solo se cargue una vez*/
 
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * 6) % products.length;
+    const newOffset = ((event.selected) * productPerPage) % products.length;
+    let endOffset = 0;
+    if (newOffset + productPerPage >= products.length) endOffset = products.length;
+    else endOffset = newOffset + productPerPage;
+
+
     setState({
       ...state,
       itemOffset: newOffset,
-      currentPage: currentPage + 1,
-      currentProducts: products.slice(newOffset, newOffset + 6)
+      currentPage: event.selected,
+      currentProducts: products.slice(newOffset, endOffset)
+    });
+    console.log(currentProducts)
+
+  };
+  const handleFilterChange = (letters) => {
+    const keyword = letters.target.value;
+    // const products = state.allProducts.filter((product) => product.name.toLowerCase().startsWith(keyword.toLowerCase()));
+    const products = state.allProducts.filter((product) => product.name.toLowerCase().includes(keyword.toLowerCase()));
+
+    setState({
+      ...state,
+      products: products,
+      currentProducts: products.slice(0, productPerPage),
+      currentPage: 0,
+      itemOffset: 0,
+      totalPages: Math.ceil(products.length / productPerPage)
     });
   };
+
 
 
   const { products, currentProducts, currentPage, itemOffset, totalPages } = state;
@@ -58,12 +83,13 @@ function ProductsList() {
       <div className="container"  >
 
         <form class="d-flex px-3 mb-3">
-          <input class="form-control me-sm-2" type="text" placeholder="Buscar producto..." />
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+          <input
+            type="search"
+            onChange={handleFilterChange}
+            placeholder="Buscar producto..." />
         </form>
         <div className="container"  >
           <div className="row row-cols-3" style={{ height: "1000px", overflowY: "auto" }}>
-            {/* paginación */}
             {currentProducts.map(product => (
               <div className="card col pb-2" key={product.id}>
                 <ProductItem product={product}></ProductItem></div>
