@@ -1,44 +1,37 @@
 
 import productsService from '../../services/products-service'
+import imagenPrueba from '../../images/medicamento.jpeg'
 import { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+
 
 function ProductItem({ product }) {
     return (
         <Fragment>
-            <div class="card" style={{ height: "100%" }} >
-                <div className="card-image"  >
-                    <img style={{ width: '100%', height: "18rem" }} src={product.picture} />
+                {/* <div className="card-image px-4"  > */}
+                    {/* <img style={{ width: '100%', height: "18rem" }} src={product.picture} /> */}
+                    {/* <img style={{ width: '100%', height: "18rem"}} src="https://animarket.net/wp-content/uploads/2019/12/gastropet-precio-peru-animarket.jpeg" />
                 </div>
                 <div class="card-body">
-                    <h6 className="card-title">
+                    <div className="card-title">
                         {product.name}
-                    </h6>
-                    <div className="card-heading">
-                        {product.shortDescription}
                     </div>
-                    <div className="card-text">
-                        {product.price}€
+                </div>
+                <a href="#" className="btn btn-secondary m-3 my-sm-0">Ver Producto</a> */}
+
+
+                <div className="card-image px-4"  >
+                    {/* <img style={{ width: '100%', height: "18rem" }} src={product.picture} /> */}
+                    <img style={{ width: '100%', height: "18rem"}} src="https://animarket.net/wp-content/uploads/2019/12/gastropet-precio-peru-animarket.jpeg" />
+
+                </div>
+                <div class="card-body">
+                    <div className="card-title">
+                        {product.name}
                     </div>
-
-                </div>
-                <div className="card-footer">
-                    <a href="#" className="btn btn-outline-dark btn-sm">Ver detalles</a>
-                </div>
-
-            </div>
-
-
-            {/* <div class="card" style={{ width: "10rem" }}>
-                <img className="card-img-top" src={product.picture} alt="Card image cap" />
-                <div className="card-body">
-                    <h5 className="card-title">  {product.name}</h5>
-                    <p className="card-text">{product.shortDescription}</p>
-                    <a href="#" className="btn btn-link">>Ver detalles</a>
-                </div>
-            </div> */}
-
-
-        </Fragment>
+                </div>     
+                <Link className="stretched-link link-unstyled" to={`/products/${product._id}`}></Link>
+    </Fragment>
 
     )
 }
