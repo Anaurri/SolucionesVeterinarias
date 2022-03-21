@@ -9,26 +9,21 @@ import ProductsList from '../components/products/ProductsList';
 function Products() {
   return (
     <Fragment>
-      <div className="container pt-3">
-
+      <div className="pt-3" style={{ marginLeft: "10%", marginRight: "10%" }}>
         <Carrusel />
         <div className="pt-4 pb-5" >
-
-          <div className="row row-cols-2">
-            <div className="container pt-4 pb-5" style={{ width: "25%" }}>
-              <h1>Descarga el catálogo en PDF</h1>
-              <Catalogo />
-            </div>
-            <div className="container pt-4 pb-5 " style={{ width: "75%" }}>
-              <h1>Productos</h1>
-              <h5>( link al catálogo - más productos en los catálogos)</h5>
-              <ProductsList ProfileView="false" />
-              {/* </div> */}
-
-            </div>
+          <div className="container pt-4 pb-5" >
+            <h1>Productos</h1>
+            <h5>( link al catálogo - más productos en los catálogos)</h5>
+            <ProductsList ProfileView="false" />
+          </div>
+          <div className="container pt-4 pb-5">
+            <h1>Descarga el catálogo en PDF</h1>
+            <Catalogo />
           </div>
 
         </div>
+
       </div>
       <AboutUs></AboutUs>
 

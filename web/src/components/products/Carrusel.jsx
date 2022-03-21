@@ -10,7 +10,7 @@ import animal5 from '../../images/perro1.jpg';
 function Carrusel() {
     return (
             <div className="container d-flex justify-content-center pb-3" >
-                <div id="carouselExampleIndicators" className="carousel slide" style={{width: "650px"}} data-bs-ride="carousel">
+                <div id="carouselExampleIndicators" className="carousel slide" style={{width: "950px"}} data-bs-ride="carousel">
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>

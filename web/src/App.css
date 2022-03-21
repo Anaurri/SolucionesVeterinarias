@@ -1,12 +1,6 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(78, 72, 163);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,9 +18,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +26,66 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 10em;
+  letter-spacing: -2px;
+  color:rgb(78, 72, 163);
+  border-bottom: 2px solid rgb(78, 72, 163);
+  /* text-transform: uppercase; */
+ }
+ .corporateColor {
+  background: rgb(78, 72, 163);
+
+ }
+ .navAndFooter {
+  background: rgb(78, 72, 163);
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 1.1em;
+  color:antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .navAndFooter:hover {
+  color:rgb(182, 179, 221);
+
+ }
+
+ .search{
+  margin: 50px auto;
+  padding-left: 1%;
+  width: 100%;
+  height: 50px;
+  border:2px solid rgb(78, 72, 163) ;
+}
+
+.search:hover {
+  border:2px solid rgb(78, 72, 163) !important ;
+
+ }
+ 
+.textOfCard{
+  color: rgb(78, 72, 163);
+  font-style: solid;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 1em;
+}
+.pag{
+  font-style: solid;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pag:hover {
+  color:rgb(182, 179, 221);
+
 }

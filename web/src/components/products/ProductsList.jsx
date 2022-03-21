@@ -7,7 +7,7 @@ import ReactPaginate from 'react-paginate';
 
 function ProductsList() {
 
-  const productPerPage = 6;
+  const productPerPage = 8;
 
   const [state, setState] = useState({
     products: [],
@@ -80,22 +80,21 @@ function ProductsList() {
 
   return (
     <Fragment >
-      <div className="container"  >
+      <div>
 
-        <form class="d-flex px-3 mb-3">
           <input
+            className= 'search'
             type="search"
             onChange={handleFilterChange}
             placeholder="Buscar producto..." />
-        </form>
-        <div className="container"  >
-          <div className="row row-cols-3" style={{ height: "1000px", overflowY: "auto" }}>
+        <div>
+          <div className="row row-cols-4" >
             {currentProducts.map(product => (
-              <div className="card col pb-2" key={product.id}>
+              <div className="card col pb-2" style={{border:'0px'}} key={product.id}>
                 <ProductItem product={product}></ProductItem></div>
             ))}
           </div>
-          <div className="container">
+          <div className="pag" >
 
             <ReactPaginate
               breakLabel="..."

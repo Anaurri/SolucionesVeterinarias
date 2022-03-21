@@ -7,63 +7,79 @@ import { useState, useEffect, Fragment } from 'react';
 function ProductDetail() {
     const params = useParams();
 
-    const [product, setProduct] = useState({ });
+    const [product, setProduct] = useState({
+        name: '',
+        largeDescription: '',
+        price: ''
+    });
     useEffect(() => {
 
         async function fetchProduct() {
             const { id } = params;
-            console.log (id)
             console.log('Fetching product...');
-            setProduct(product => ({
-              ...product,
-            }))
-            let product = await productsService.detail(id);
-            console.log(product)
+            const product = await productsService.detail(id);       
             if (!isUnmounted) {
                 setProduct({
-                    product: product,
-              })
+                    name: product.name,
+                    largeDescription: product.largeDescription,
+                    price: product.price
+                })
             }
-          }
-          let isUnmounted = false;
-          fetchProduct();
-      
-          return () => {
+        }
+        let isUnmounted = false;
+        fetchProduct();
+
+        return () => {
             // componentWillUnmount
             isUnmounted = true;
-          }
-        }, []); /*debemos poner el array de dependencias aunque vaya a vacío para que solo se cargue una vez*/
-        
-      
-        const { picture, name, shortDescription, price } = product;
-  
-      
-    
+        }
+    }, []); /*debemos poner el array de dependencias aunque vaya a vacío para que solo se cargue una vez*/
+
+
+    const { picture, name, largeDescription, price } = product;
+
+
+
     return (
         <Fragment>
-            <div>
-                <div className="card-image px-4"  >
-                    {/* <img style={{ width: '100%', height: "18rem" }} src={picture} /> */}
-                    <img style={{ width: '100%', height: "18rem" }} src="https://animarket.net/wp-content/uploads/2019/12/gastropet-precio-peru-animarket.jpeg" />
+            <div style={{ marginLeft: "15%", marginRight: "15%" }}>
+                <div style={{ width: "90%" }}  >
+                    <div className="row row-cols-2">
 
-                </div>
-                <div class="card-body">
-                    <div className="card-title">
-                        {name}
-                    </div>
-                    <div className="card-heading">
-                        {shortDescription}
-                    </div>
-                    <div className="card-text text-muted">
-                        {price}€
-                        2,3 €
-                    </div>
+                        <div className="card-image"  >
+                            {/* <img style={{ width: '100%', height: "18rem" }} src={picture} /> */}
+                            <img style={{ width: '60%', height: "auto" }} src="https://animarket.net/wp-content/uploads/2019/12/gastropet-precio-peru-animarket.jpeg" />
 
+                        </div>
+                        <div class="card-body textOfCard mt-5 ">
+                            <div className="card-title mt-3" style={{fontWeight: 'bold' }}>
+                                {name}
+                            </div>
+                            <div className="card-heading mt-4">
+                                {largeDescription}
+                            </div>
+                            <div>{price}</div>
+                            { price != null && (
+                                <div className="card-text mt-5">
+                                    {price}€
+                                </div>
+                            )} 
+                            {price == null  && (
+                                <div className="card-text mt-5">
+                                    Precio no disponible
+                                </div>
+                            )}
+
+
+                        </div>
+
+                    </div>
                 </div>
+                <a href="/" className="btn btn-secondary m-3 my-sm-0 ">Atrás</a>
+
             </div>
 
 
-            <a href="/" className="btn btn-secondary m-3 my-sm-0">Atrás</a>
         </Fragment>
 
     )

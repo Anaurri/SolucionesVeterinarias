@@ -4,9 +4,9 @@ import { Fragment } from 'react';
 function AboutUs() {
     return (
         <Fragment>
-                  <div className="p-5 bg-secondary">
+                  <div className="p-5 navAndFooter"  >
 
-                    <div className="container row">
+                    <div className="container row" style={{borderLeft: '2px solid antiquewhite'}} >
                         <address>
                             <strong>Soluciones Veterinarias SLU</strong><br />
                             Paseo Ezequiel González,<br />
@@ -15,7 +15,7 @@ function AboutUs() {
                         </address>
 
                         <address>
-                            <a href="mailto:solucionesveter@gmail.com">solucionesveter@gmail.com</a>
+                            <a href="mailto:solucionesveter@gmail.com" style={{color: 'white'}} >solucionesveter@gmail.com</a>
                         </address>
                 </div>
 
