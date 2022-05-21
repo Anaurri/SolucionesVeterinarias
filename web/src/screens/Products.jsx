@@ -33,7 +33,7 @@ function Products() {
 
       </div>
       <AboutUs></AboutUs>
-      <PoliticaDatos></PoliticaDatos>
+      {/* <PoliticaDatos></PoliticaDatos> */}
 
     </Fragment >
   );
