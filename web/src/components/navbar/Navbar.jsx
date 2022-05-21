@@ -4,19 +4,17 @@ import AboutUs from '../footer/AboutUs'
 import logo from '../../images/caballo.png'
 
 function Navbar() {
-
   return (
     <Fragment>
       <nav className="navbar lead border navAndFooter" >
         <div className="container" >
-
-          <NavLink className="navbar-brand navAndFooter" to="/">Productos</NavLink>
-          <NavLink className="navbar-brand navAndFooter" to="/">Descargas Catálogo</NavLink>
-          <NavLink className="navbar-brand navAndFooter" to="/">Horario Tienda</NavLink>
-          <NavLink className="navbar-brand navAndFooter" to="/">Sobre nosotros</NavLink>
+          {/* <NavLink onClick={()=> window.location.replace("/#products")} className="navbar-brand navAndFooter" to="/">Productos</NavLink> */}
+          <NavLink onClick={()=> window.location.replace("/#downloads")} className="navbar-brand navAndFooter"to="/">Descargas</NavLink>
+          <NavLink onClick={()=> window.location.replace("/#footer")} className="navbar-brand navAndFooter" to="/">Horario Tienda</NavLink>
+          <NavLink onClick={()=> window.location.replace("/#footer")} className="navbar-brand navAndFooter" to="/">Sobre nosotros</NavLink>
 
         </div>
-    </nav>
+      </nav>
     </Fragment>
   );
 }

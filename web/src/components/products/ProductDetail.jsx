@@ -1,6 +1,5 @@
 
 import productsService from '../../services/products-service'
-import imagenPrueba from '../../images/medicamento.jpeg'
 import { useParams } from 'react-router';
 import { useState, useEffect, Fragment } from 'react';
 

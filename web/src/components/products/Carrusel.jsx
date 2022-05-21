@@ -1,6 +1,6 @@
 import { Fragment, useContext } from "react";
 import animal1 from '../../images/huellas_kiko.jpg';
-import animal2 from '../../images/tienda1.png';
+// import animal2 from '../../images/tienda1.png';
 import animal3 from '../../images/fidel_vaca.jpg';
 import animal4 from '../../images/lucky.jpg';
 import animal5 from '../../images/perro1.jpg';
@@ -22,9 +22,9 @@ function Carrusel() {
                         <div className="carousel-item active">
                             <img src={animal1} className="d-block w-100 border-right-0 border-primary rounded" alt="..." />
                         </div>
-                        <div className="carousel-item">
+                        {/* <div className="carousel-item">
                             <img src={animal2} className="d-block w-100 border-right-0 border-primary rounded" alt="..." />
-                        </div>
+                        </div> */}
                         <div className="carousel-item">
                             <img src={animal3} className="d-block w-100 border-right-0 border-primary rounded" alt="..." />
                         </div>

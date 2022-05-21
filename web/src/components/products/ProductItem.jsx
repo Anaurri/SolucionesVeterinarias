@@ -1,6 +1,5 @@
 
 import productsService from '../../services/products-service'
-import imagenPrueba from '../../images/medicamento.jpeg'
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
