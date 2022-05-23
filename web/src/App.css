@@ -28,7 +28,15 @@
   }
 }
 
-h1 {
+h3 {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 10em;
+  letter-spacing: -2px;
+  color:rgb(78, 72, 163);
+  border-bottom: 2px solid rgb(78, 72, 163);
+  /* text-transform: uppercase; */
+ }
+ h1 {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 10em;
   letter-spacing: -2px;
