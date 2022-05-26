@@ -2,6 +2,7 @@ import { Fragment, useContext } from "react";
 import Carrusel from '../components/products/Carrusel';
 import AboutUs from '../components/footer/AboutUs';
 import Desacargable1 from '../components/products/Desacargable1';
+import PoliticaDatos from "../components/footer/PoliticaDatos";
 
 
 function Products() {
@@ -21,6 +22,7 @@ function Products() {
         </div>
       </div>
       <AboutUs></AboutUs>
+      <PoliticaDatos/>
     </Fragment >
   );
 }
