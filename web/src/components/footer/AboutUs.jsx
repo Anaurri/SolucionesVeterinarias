@@ -10,10 +10,8 @@ function AboutUs() {
                         <div className="container container-fluid row" style={{ borderLeft: '2px solid antiquewhite' }} >
                             <address>
                                 <strong>Soluciones Veterinarias SLU</strong><br />
-                                Paseo Ezequiel González,<br />
-                                40002, Segovia<br />
-                                <abbr title="Phone"></abbr><i className=" fa fa-phone"></i>639673394
-                                <address>
+                                Segovia<br />
+                            <address>
                                 <a href="mailto:solucionesveter@gmail.com" style={{ color: 'white' }} >solucionesveter@gmail.com</a>
                             </address>
                             </address>
